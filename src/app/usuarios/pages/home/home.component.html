@@ -5,7 +5,7 @@
     <mat-sidenav #sidenav mode="push">
 
         <mat-toolbar color="primary">
-            <span>Menú</span>
+            <span>CMS</span>
             <span class="spacer"></span>
             
                 <button mat-icon-button
@@ -19,14 +19,14 @@
             <a routerLink="./Menu"
                mat-list-item
                (click)="sidenav.toggle()">
-               <mat-icon mat-list-icon>label</mat-icon>
-               <span>Listado de Usuarios</span>
+               <mat-icon mat-list-icon>people_alt</mat-icon>
+               <span>Clientes</span>
             </a>
 
             <a routerLink="./agregar"
                mat-list-item
                (click)="sidenav.toggle()">
-               <mat-icon mat-list-icon>add</mat-icon>
+               <mat-icon mat-list-icon>person</mat-icon>
                <span>Usuarios</span>
             </a>
 
@@ -36,6 +36,21 @@
                <mat-icon mat-list-icon>search</mat-icon>
                <span>Buscar Usuario</span>
             </a>
+            <a routerLink="./categorias"
+                mat-list-item
+               (click)="sidenav.toggle()">
+               <mat-icon mat-list-icon>category</mat-icon>
+               <span>Categorias</span>
+            </a>
+            <a routerLink="./publicaciones"
+                mat-list-item
+               (click)="sidenav.toggle()">
+               <mat-icon mat-list-icon>dashboard</mat-icon>
+               <span>Publicaciones</span>
+            </a>
+
+            
+
         </mat-nav-list>
 
     </mat-sidenav>
@@ -49,6 +64,7 @@
         <span class="spacer"></span>
 
         <button mat-button>
+            <mat-icon mat-list-icon>logout</mat-icon>
             Logout
         </button>
     

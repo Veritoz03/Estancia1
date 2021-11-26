@@ -5,6 +5,8 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { CategoriasComponent } from './pages/categorias/categorias.component';
+import { PublicacionesComponent } from './pages/publicaciones/publicaciones.component';
 
 const routes: Routes =[
   {
@@ -15,6 +17,8 @@ const routes: Routes =[
       { path: 'agregar', component: AgregarComponent },
       { path: 'editar/:id', component: AgregarComponent },
       { path: 'buscar', component: BuscarComponent },
+      { path: 'categorias', component: CategoriasComponent},
+      { path: 'publicaciones', component: PublicacionesComponent},
       { path: ':id', component: UsuarioComponent },
       { path: '**', redirectTo: 'listado'}
     ]
